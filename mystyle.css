@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  top-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #5a1390;
+    /* border-width: 700px; */
+    /* border-radius: 25%; */
+  }
+  
+  top {
+    margin: auto;
+  }
+  a:link, a:visited {
+    color: #5a1390;
+    text-decoration: none;
+  }
+  .ThisPage {
+    color: #2236b9;
+    font-size: 2em;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+  }
+  center-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    height: 100%;
+    vertical-align: auto;
+    flex: 1;
+  }
+
+  cent {
+    padding: 70px;
+  }
+  
+  #profilephoto {
+    flex-grow:1;
+    text-align: center;
+    max-width: 400px;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 50%;
+    background-color: #ffffff;
+    align-items: center;
+  }
+  
+  #content {
+    border-left: 1px solid #37445087;
+    flex-grow:2;
+    text-align: justify;
+    align-items: center;
+    max-width: 700px;
+  }
+  
+  .vl {
+    border-left: 1px solid #668096;
+    height: 450px;
+  }
+  
+  copyright-container {
+    align-items: bottom;
+    text-align: center;
+    margin-top:7px;
+    /* position: absolute; */
+    display:block;
+    bottom:0;
+    right:0;
+    width:100%;
+    border-top: 2px solid #5a1390;
+  }
+
+  #skill_table {
+    border-collapse: collapse;
+  }
+  
+  #skill_table td, #skill_table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #skill_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #skill_table tr:hover {background-color: #ddd;}
+  
+  #skill_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #6804aa;
+    color: white;
+  }
+
+  @media screen and (max-width: 700px) {
+    top-container {
+        align-items: center;
+    }
+    center-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    #skill_table {
+        width: 100%;
+      }
+    #content {
+        border-left: 0px solid #37445087;
+        border-top: 1px solid #37445087;
+      }
+  }
